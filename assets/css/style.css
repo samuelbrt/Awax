@@ -623,24 +623,42 @@ header {
     background-color: #e5e5e5;
 }
 
-.prices {
-
+.prices-tables {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
 
 .price-area {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     background-color: #fff;
-    width: 300px;
+    width: 280px;
     padding: 20px;
 }
 
-.price-title {
+.price-area a {
+    width: 130px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 16px;
+    text-align: center;
+    padding-top: 12px;
+    margin-top: 20px;
+    background-color: #262525;
+}
 
+.price-area a:hover {
+    background-color: #b28756;
 }
 
 .price-title p {
+    padding-top: 10px;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 14px;
@@ -651,28 +669,34 @@ header {
 }
 
 .price-desc h2 {
+    color: #262525;
     font-size: 30px;
 }
 
 .price-desc p {
     text-transform: uppercase;
     font-size: 11px;
+    text-align: center;
 }
 
 .price-benefits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
 }
 
 .price-benefits p {
-    font-size: 13px;
+    color: #000;
+    font-size: 12px;
 }
 
-.price-benefits:nth-child(even) {
-    padding: 10px;
-    margin-top: 10px;
+.block {
+    width: 10px;
+    border-bottom: 1px solid #000;
+    margin: 10px;
 }
 
-.price-benefits p:last-child {
-    border-bottom: 0px;
-}
+
 
